@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;900&family=Lexend+Deca:wght@200;300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/71ef7656d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Blog Desafio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrapper-class" id="header-title">
+          <h2 id="title-header">Coderoll</h2>
+          <h2 id="title-header">Blog</h2>
+        </div>
+        <div class="wrapper-class" id="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="  Pesquisar no blog"
+          />
+          <button type="submit" id="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="posts" class="container">
+      <div class="cards">
+        <div class="wrapper-class">
+          <h6 class="post-time-stamp">Sept. 22 2021</h6>
+          <button class="like-button">
+            <i class="like-icon" class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="content">
+          <h5 class="post-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h5>
+
+          <p class="post-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            quod ad sint quam aliquid placeat sit eligendi perspiciatis ut neque
+            hic tempore magnam ducimus aspernatur culpa molestias, facere dolore
+            minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Hic beatae laudantium perferendis error nobis repellendus eligendi
+            sint a tempora animi! Laboriosam doloremque quos explicabo et!
+            Blanditiis quasi minus enim neque?
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="wrapper-class">
+          <h6 class="post-time-stamp">Sept. 22 2021</h6>
+          <button class="like-button">
+            <i class="like-icon" class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="content">
+          <h5 class="post-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h5>
+
+          <p class="post-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            quod ad sint quam aliquid placeat sit eligendi perspiciatis ut neque
+            hic tempore magnam ducimus aspernatur culpa molestias, facere dolore
+            minima? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Hic beatae laudantium perferendis error nobis repellendus eligendi
+            sint a tempora animi! Laboriosam doloremque quos explicabo et!
+            Blanditiis quasi minus enim neque? Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Eos commodi omnis numquam pariatur,
+            facere quo accusamus rerum doloribus, necessitatibus eum veniam
+            deserunt officiis dicta sit laboriosam libero molestias quam?
+            Accusantium!
+          </p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="wrapper-class">
+          <h6 class="post-time-stamp">Sept. 22 2021</h6>
+          <button class="like-button">
+            <i class="like-icon" class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="content">
+          <h5 class="post-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </h5>
+
+          <p class="post-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            quod ad sint quam aliquid placeat sit eligendi perspiciatis ut neque
+            hic tempore magnam ducimus aspernatur culpa molestias, facere dolore
+            minima?
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3 id="credits">@carolteera with Codelandia</h3>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        reset: true
+      })
+
+      ScrollReveal().reveal('.cards', { delay: 200 })
+      ScrollReveal().reveal('.post-time-stamp', { delay: 400 })
+      ScrollReveal().reveal('.post-title', { delay: 500 })
+      ScrollReveal().reveal('.post-content', { delay: 600 })
+    </script>
+  </body>
+</html>
